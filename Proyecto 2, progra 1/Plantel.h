@@ -21,9 +21,7 @@ public:
     ~Plantel();
 
     // Métodos principales
-    void crearMatriz();
     void mostrarMatriz();
-    void liberarMatriz();
     void recomendarEspacios();
 
     // Getters y Setters

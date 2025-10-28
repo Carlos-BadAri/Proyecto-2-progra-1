@@ -128,6 +128,7 @@
     <ClInclude Include="Colaborador.h" />
     <ClInclude Include="ContratoAlquiler.h" />
     <ClInclude Include="EspacioEstacionammiento.h" />
+    <ClInclude Include="Persona.h" />
     <ClInclude Include="PersonaFisica.h" />
     <ClInclude Include="PersonaJuridica.h" />
     <ClInclude Include="Plantel.h" />

@@ -15,20 +15,7 @@ Plantel::Plantel(char letra, int tipo, int filas, int columnas) {
     this->filas = filas;
     this->columnas = columnas;
     this->capacidadMax = filas * columnas;
-    crearMatriz();
-}
 
-Plantel::~Plantel() {
-    if (matriz != nullptr) {
-        for (int i = 0; i < filas; i++) {
-            delete[] matriz[i];
-        }
-        delete[] matriz;
-        matriz = nullptr;
-    }
-}
-
-void Plantel::crearMatriz() {
     matriz = new EspacioEstacionamiento * [filas];
     int contador = 1;
     for (int i = 0; i < filas; i++) {
@@ -41,8 +28,18 @@ void Plantel::crearMatriz() {
     }
 }
 
+Plantel::~Plantel() {
+    if (matriz != nullptr) {
+        for (int i = 0; i < filas; i++) {
+            delete[] matriz[i];
+        }
+        delete[] matriz;
+        matriz = nullptr;
+    }
+}
+
 void Plantel::mostrarMatriz() {
-    cout << "\n--- Plantel " << letra << " ---\n";
+    cout << "-- - Plantel " << letra << " -- - " << endl;;
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
             cout << "[" << matriz[i][j].getCodigo() << " " << matriz[i][j].getEstado()[0] << "] ";
@@ -52,7 +49,7 @@ void Plantel::mostrarMatriz() {
 }
 
 void Plantel::recomendarEspacios() {
-    cout << "\nEspacios recomendados en el Plantel " << letra << " (simulado):\n";
+    cout << "Espacios recomendados en el Plantel " << letra << " (simulado):" << endl;;
     for (int i = 0; i < filas && i < 3; i++) {
         cout << matriz[i][0].getCodigo() << endl;
     }

@@ -27,5 +27,5 @@ public:
     void setEstado(string estado);
     void setVehiculo(Vehiculo* vehiculo);
 
-    void mostrar();
+    string toString();
 };
