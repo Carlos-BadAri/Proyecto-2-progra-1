@@ -19,7 +19,6 @@ public:
     Vehiculo(string placa, string marca, string modelo, string color, int anio);
     ~Vehiculo();
 
-    // Getters y Setters
     string getPlaca();
     string getMarca();
     string getModelo();

@@ -8,8 +8,8 @@ using namespace std;
 class Plantel
 {
 private:
-    char letra;       // Ejemplo: 'A', 'B', ...
-    int tipo;         // 1 a 4
+    char letra;
+    int tipo;
     int filas;
     int columnas;
     int capacidadMax;
@@ -17,14 +17,12 @@ private:
 
 public:
     Plantel();
-    Plantel(char letra, int tipo, int filas, int columnas);
+    Plantel(char, int, int, int);
     ~Plantel();
 
-    // Métodos principales
     void mostrarMatriz();
     void recomendarEspacios();
 
-    // Getters y Setters
     char getLetra();
     int getTipo();
     int getFilas();
@@ -32,9 +30,9 @@ public:
     int getCapacidadMax();
     EspacioEstacionamiento** getMatriz();
 
-    void setLetra(char letra);
-    void setTipo(int tipo);
-    void setFilas(int filas);
-    void setColumnas(int columnas);
+    void setLetra(char);
+    void setTipo(int);
+    void setFilas(int);
+    void setColumnas(int);
 };
 

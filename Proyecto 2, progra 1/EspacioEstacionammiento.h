@@ -5,20 +5,19 @@
 #include "Vehiculo.h"
 using namespace std;
 
-class Vehiculo; // Declaración adelantada
+class Vehiculo;
 
 class EspacioEstacionamiento {
 private:
     string codigo;
     string estado; // "Disponible" o "Ocupado"
-    Vehiculo* vehiculo; // Puede ser nullptr si está libre
+    Vehiculo* vehiculo;
 
 public:
     EspacioEstacionamiento();
     EspacioEstacionamiento(string codigo);
     ~EspacioEstacionamiento();
 
-    // Getters y Setters
     string getCodigo();
     string getEstado();
     Vehiculo* getVehiculo();

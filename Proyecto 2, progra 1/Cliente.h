@@ -12,18 +12,16 @@ protected:
 
 public:
     Cliente();
-    Cliente(string identificacion, string nombre, string paisResidencia);
+    Cliente(string , string, string);
     virtual ~Cliente();
 
-    // Getters
-    string getIdentificacion();
-    string getNombre();
+    string getId();
+    string getNom();
     string getPaisResidencia();
 
-    // Setters
-    void setIdentificacion(string identificacion);
-    void setNombre(string nombre);
-    void setPaisResidencia(string paisResidencia);
+    void setId(string);
+    void setNom(string);
+    void setPaisResidencia(string);
 
     virtual string toString();
 };

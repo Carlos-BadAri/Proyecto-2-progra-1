@@ -65,10 +65,10 @@ void Vehiculo::setBitacora(BitacoraEstado* bitacora) {
 
 string Vehiculo::toString() {
     stringstream ss;
-    ss << "Placa: " << placa;
-    ss << "Marca: " << marca;
-    ss << "Modelo: " << modelo;
-    ss << "Color: " << color;
-    ss << "Año: " << anio;
-    cout << ss.str() << endl;
+    ss << "Placa: " << placa << endl;
+    ss << "Marca: " << marca << endl;
+    ss << "Modelo: " << modelo << endl;
+    ss << "Color: " << color << endl;
+    ss << "Año: " << anio << endl;
+    return ss.str();
 }

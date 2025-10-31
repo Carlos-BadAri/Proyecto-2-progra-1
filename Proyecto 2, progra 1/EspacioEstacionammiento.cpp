@@ -19,23 +19,35 @@ EspacioEstacionamiento::~EspacioEstacionamiento()
 	vehiculo = nullptr;//Aqui esto no elimina, solo desconecta 
 }
 
-string EspacioEstacionamiento::getCodigo() { return codigo; }
-string EspacioEstacionamiento::getEstado() { return estado; }
-Vehiculo* EspacioEstacionamiento::getVehiculo() { return vehiculo; }
+string EspacioEstacionamiento::getCodigo() { 
+	return codigo;
+}
+string EspacioEstacionamiento::getEstado() {
+	return estado; 
+}
+Vehiculo* EspacioEstacionamiento::getVehiculo() { 
+	return vehiculo;
+}
 
-void EspacioEstacionamiento::setCodigo(string codigo) { this->codigo = codigo; }
-void EspacioEstacionamiento::setEstado(string estado) { this->estado = estado; }
-void EspacioEstacionamiento::setVehiculo(Vehiculo* vehiculo) { this->vehiculo = vehiculo; }
+void EspacioEstacionamiento::setCodigo(string codigo) {
+	this->codigo = codigo; 
+}
+void EspacioEstacionamiento::setEstado(string estado) { 
+	this->estado = estado; 
+}
+void EspacioEstacionamiento::setVehiculo(Vehiculo* vehiculo) {
+	this->vehiculo = vehiculo; 
+}
 
 string EspacioEstacionamiento::toString()
 {
 	stringstream ss;
-	ss << "Codigo: " << codigo;
-	ss << "Estado: " << estado;
+	ss << "Codigo: " << codigo << endl;
+	ss << "Estado: " << estado << endl;
 	if (vehiculo != nullptr)
-		ss << "Vehiculo asignado.";
+		ss << "Vehiculo asignado." << endl;
 	else
-		ss << "Sin vehiculo.";
+		ss << "Sin vehiculo." << endl;
 
-	cout << ss.str() << endl;
+	return ss.str();
 }

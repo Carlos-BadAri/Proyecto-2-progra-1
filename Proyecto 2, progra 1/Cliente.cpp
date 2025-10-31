@@ -14,18 +14,31 @@ Cliente::Cliente(string identificacion, string nombre, string paisResidencia) {
 
 Cliente::~Cliente() {}
 
-string Cliente::getIdentificacion() { return identificacion; }
-string Cliente::getNombre() { return nombre; }
-string Cliente::getPaisResidencia() { return paisResidencia; }
+string Cliente::getId() {
+    return identificacion; 
+}
+string Cliente::getNom() { 
+    return nombre;
+}
+string Cliente::getPaisResidencia() {
+    return paisResidencia;
+}
 
-void Cliente::setIdentificacion(string identificacion) { this->identificacion = identificacion; }
-void Cliente::setNombre(string nombre) { this->nombre = nombre; }
-void Cliente::setPaisResidencia(string paisResidencia) { this->paisResidencia = paisResidencia; }
+void Cliente::setId(string identificacion) {
+    this->identificacion = identificacion;
+}
+void Cliente::setNom(string nombre) { 
+    this->nombre = nombre; 
+}
+void Cliente::setPaisResidencia(string paisResidencia) { 
+    this->paisResidencia = paisResidencia; 
+}
 
 string Cliente::toString() {
     stringstream ss;
-    ss << "ID: " << identificacion;
-    ss << "Nombre: " << nombre;
-    ss << "País: " << paisResidencia;
-    cout << ss.str() << endl;
+    ss << "ID: " << identificacion << endl;
+    ss << "Nombre: " << nombre << endl;
+    ss << "País: " << paisResidencia << endl;
+    return ss.str();
+
 }
