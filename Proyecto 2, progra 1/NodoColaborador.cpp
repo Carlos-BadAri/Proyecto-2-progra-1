@@ -25,3 +25,7 @@ void NodoColaborador::setSiguiente(NodoColaborador* sig) {
 NodoColaborador* NodoColaborador::getSiguiente() {
     return siguiente;
 }
+
+Colaborador* NodoColaborador::getDato() {
+    return dato;
+}

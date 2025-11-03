@@ -15,4 +15,5 @@ public:
     void agregarDato(Vehiculo*);
     void setSiguiente(NodoVehiculo*);
     NodoVehiculo* getSiguiente();
+    Vehiculo* getDato();
 };

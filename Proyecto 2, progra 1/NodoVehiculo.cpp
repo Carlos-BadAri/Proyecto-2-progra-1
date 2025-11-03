@@ -25,3 +25,7 @@ void NodoVehiculo::setSiguiente(NodoVehiculo* sig) {
 NodoVehiculo* NodoVehiculo::getSiguiente() {
     return siguiente;
 }
+
+Vehiculo* NodoVehiculo::getDato() {
+    return dato;
+}

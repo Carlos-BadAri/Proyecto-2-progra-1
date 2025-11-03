@@ -12,7 +12,7 @@ public:
     NodoColaborador();
     NodoColaborador(Colaborador*);
     virtual ~NodoColaborador();
-
+    Colaborador* getDato();
     void agregarDato(Colaborador*);
     void setSiguiente(NodoColaborador*);
     NodoColaborador* getSiguiente();

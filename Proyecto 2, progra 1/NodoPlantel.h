@@ -15,4 +15,5 @@ public:
     void agregarDato(Plantel*);
     void setSiguiente(NodoPlantel*);
     NodoPlantel* getSiguiente();
+    Plantel* getDato();
 };

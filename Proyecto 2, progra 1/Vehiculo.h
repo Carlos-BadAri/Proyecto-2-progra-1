@@ -18,7 +18,7 @@ public:
     Vehiculo();
     Vehiculo(string placa, string marca, string modelo, string color, int anio);
     ~Vehiculo();
-
+            
     string getPlaca();
     string getMarca();
     string getModelo();

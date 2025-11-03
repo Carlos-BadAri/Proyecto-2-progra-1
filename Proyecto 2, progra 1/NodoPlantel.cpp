@@ -25,3 +25,6 @@ void NodoPlantel::setSiguiente(NodoPlantel* sig) {
 NodoPlantel* NodoPlantel::getSiguiente() {
     return siguiente;
 }
+Plantel* NodoPlantel::getDato() {
+    return dato;
+}

@@ -130,6 +130,9 @@
     <ClInclude Include="EspacioEstacionammiento.h" />
     <ClInclude Include="ListaBitacora.h" />
     <ClInclude Include="ListaCliente.h" />
+    <ClInclude Include="ListaColaborador.h" />
+    <ClInclude Include="ListaPlantel.h" />
+    <ClInclude Include="ListaVehiculo.h" />
     <ClInclude Include="NodoBitacora.h" />
     <ClInclude Include="NodoCliente.h" />
     <ClInclude Include="NodoColaborador.h" />
@@ -153,6 +156,9 @@
     <ClCompile Include="EspacioEstacionammiento.cpp" />
     <ClCompile Include="ListaBitacora.cpp" />
     <ClCompile Include="ListaCliente.cpp" />
+    <ClCompile Include="ListaColaborador.cpp" />
+    <ClCompile Include="ListaPlantel.cpp" />
+    <ClCompile Include="ListaVehiculo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NodoBitacora.cpp" />
     <ClCompile Include="NodoCliente.cpp" />

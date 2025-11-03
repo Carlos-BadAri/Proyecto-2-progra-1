@@ -87,3 +87,13 @@ void Plantel::setFilas(int filas) {
 void Plantel::setColumnas(int columnas) { 
     this->columnas = columnas; 
 }
+
+string Plantel::toString() {
+    stringstream ss;
+    ss << "Plantel " << letra << endl;
+    ss << "Tipo: " << tipo << endl;
+    ss << "Filas: " << filas << endl;
+    ss << "Columnas: " << columnas << endl;
+    ss << "Capacidad Max: " << capacidadMax << endl;
+    return ss.str();
+}

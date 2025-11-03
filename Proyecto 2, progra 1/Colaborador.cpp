@@ -16,10 +16,10 @@ Colaborador::Colaborador(string idColaborador, string nombre, string puesto, str
 
 Colaborador::~Colaborador() {}
 
-string Colaborador::getIdColaborador() { 
+string Colaborador::getId() { 
     return idColaborador; 
 }
-string Colaborador::getNombre() {
+string Colaborador::getNom() {
     return nombre; 
 }
 string Colaborador::getPuesto() {

@@ -16,8 +16,8 @@ public:
     Colaborador(string, string, string, string);
     ~Colaborador();
 
-    string getIdColaborador();
-    string getNombre();
+    string getId();
+    string getNom();
     string getPuesto();
     string getSucursalAsignada();
 

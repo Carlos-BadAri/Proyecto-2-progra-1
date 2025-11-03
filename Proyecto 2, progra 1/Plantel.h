@@ -34,5 +34,7 @@ public:
     void setTipo(int);
     void setFilas(int);
     void setColumnas(int);
+
+    string toString();
 };
 
