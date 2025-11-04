@@ -41,11 +41,11 @@ void ContratoAlquiler::setCliente(Cliente* cliente) { this->cliente = cliente; }
 void ContratoAlquiler::setVehiculo(Vehiculo* vehiculo) { this->vehiculo = vehiculo; }
 void ContratoAlquiler::setColaborador(Colaborador* colaborador) { this->colaborador = colaborador; }
 
-void ContratoAlquiler::mostrar() {
+string ContratoAlquiler::toString() {
     stringstream ss;
-    ss << "Contrato ID: " << idContrato
-        << " | Fecha inicio: " << fechaInicio
-        << " | Fecha fin: " << fechaFin
-        << " | Monto total: " << montoTotal;
-    cout << ss.str() << endl;
+    ss << "Contrato ID: " << idContrato;
+    ss << "Fecha inicio: " << fechaInicio;
+    ss << "Fecha fin: " << fechaFin;
+    ss << "Monto total: " << montoTotal;
+    return ss.str();
 }

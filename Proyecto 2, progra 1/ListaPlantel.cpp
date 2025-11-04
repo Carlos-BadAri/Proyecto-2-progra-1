@@ -2,6 +2,7 @@
 
 ListaPlantel::ListaPlantel() {
     ppio = NULL;
+    actual = NULL;
 }
 
 ListaPlantel::~ListaPlantel() {
@@ -24,9 +25,11 @@ void ListaPlantel::insertarFinal(NodoPlantel* n) {
 }
 
 string ListaPlantel::toString() {
+    stringstream s;
     NodoPlantel* aux = ppio;
     while (aux != NULL) {
-        cout << aux->getDato()->toString() << endl;
+        s << aux->getDato()->toString() << endl;
         aux = aux->getSiguiente();
     }
+    return s.str();
 }

@@ -25,3 +25,7 @@ void NodoSolicitud::setSiguiente(NodoSolicitud* sig) {
 NodoSolicitud* NodoSolicitud::getSiguiente() {
     return siguiente;
 }
+
+SolicitudAlquiler* NodoSolicitud::getDato() {
+    return dato;
+}

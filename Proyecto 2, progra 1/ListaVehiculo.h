@@ -8,6 +8,7 @@ using namespace std;
 class ListaVehiculo {
 private:
     NodoVehiculo* ppio;
+    NodoVehiculo* actual;
 public:
     ListaVehiculo();
     virtual ~ListaVehiculo();

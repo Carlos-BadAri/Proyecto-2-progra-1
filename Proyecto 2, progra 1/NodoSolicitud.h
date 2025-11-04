@@ -15,4 +15,5 @@ public:
     void agregarDato(SolicitudAlquiler*);
     void setSiguiente(NodoSolicitud*);
     NodoSolicitud* getSiguiente();
+    SolicitudAlquiler* getDato();
 };

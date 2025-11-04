@@ -15,4 +15,6 @@ public:
     void agregarDato(Sucursal* s);
     void setSiguiente(NodoSucursal* sig);
     NodoSucursal* getSiguiente();
+    Sucursal* getDato();
+
 };

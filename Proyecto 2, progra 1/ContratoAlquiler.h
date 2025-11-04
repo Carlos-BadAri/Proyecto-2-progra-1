@@ -43,5 +43,5 @@ public:
     void setVehiculo(Vehiculo* vehiculo);
     void setColaborador(Colaborador* colaborador);
 
-    void mostrar();
+    string toString();
 };

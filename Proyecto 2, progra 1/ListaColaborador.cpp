@@ -1,26 +1,26 @@
 #include "ListaColaborador.h"
 
 ListaColaborador::ListaColaborador() {
-    primero = NULL;
+    ppio = NULL;
     actual = NULL;
 }
 
 ListaColaborador::~ListaColaborador() {
     NodoColaborador* aux;
-    while (primero != NULL) {
-        aux = primero;
-        primero = primero->getSiguiente();
+    while (ppio != NULL) {
+        aux = ppio;
+        ppio = ppio->getSiguiente();
         delete aux;
     }
 }
 
 void ListaColaborador::agregar(Colaborador* c) {
     NodoColaborador* nuevo = new NodoColaborador(c);
-    if (primero == NULL) {
-        primero = nuevo;
+    if (ppio == NULL) {
+        ppio = nuevo;
     }
     else {
-        actual = primero;
+        actual = ppio;
         while (actual->getSiguiente() != NULL) {
             actual = actual->getSiguiente();
         }
@@ -29,7 +29,7 @@ void ListaColaborador::agregar(Colaborador* c) {
 }
 
 Colaborador* ListaColaborador::buscar(string id) {
-    actual = primero;
+    actual = ppio;
     while (actual != NULL) {
         if (actual->getDato()->getId() == id) {
             return actual->getDato();
@@ -41,10 +41,10 @@ Colaborador* ListaColaborador::buscar(string id) {
 
 string ListaColaborador::toString() {
     stringstream s;
-    actual = primero;
-    while (actual != NULL) {
-        s << actual->getDato()->toString() << endl;
-        actual = actual->getSiguiente();
+    NodoColaborador* aux = ppio;
+    while (aux != NULL) {
+        s << aux->getDato()->toString() << endl;
+        aux = aux->getSiguiente();
     }
     return s.str();
 }

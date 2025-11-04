@@ -15,4 +15,5 @@ public:
     void agregarDato(ContratoAlquiler* c);
     void setSiguiente(NodoContrato* sig);
     NodoContrato* getSiguiente();
+    ContratoAlquiler* getDato();
 };

@@ -6,7 +6,7 @@ using namespace std;
 
 class ListaColaborador {
 private:
-    NodoColaborador* primero;
+    NodoColaborador* ppio;
     NodoColaborador* actual;
 
 public:

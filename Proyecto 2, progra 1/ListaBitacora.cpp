@@ -30,10 +30,10 @@ void ListaBitacora::agregar(BitacoraEstado* b) {
 
 string ListaBitacora::toString() {
     stringstream s;
-    actual = ppio;
-    while (actual != NULL) {
-        s << actual->getDato()->toString() << endl;
-        actual = actual->getSiguiente();
+    NodoBitacora* aux = ppio;
+    while (aux != NULL) {
+        s << aux->getDato()->toString() << endl;
+        aux = aux->getSiguiente();
     }
     return s.str();
 }

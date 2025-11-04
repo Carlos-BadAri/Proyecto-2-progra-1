@@ -25,3 +25,7 @@ void NodoContrato::setSiguiente(NodoContrato* sig) {
 NodoContrato* NodoContrato::getSiguiente() {
     return siguiente;
 }
+
+ContratoAlquiler* NodoContrato::getDato() {
+    return dato;
+}

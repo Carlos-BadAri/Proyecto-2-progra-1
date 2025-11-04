@@ -8,6 +8,7 @@ using namespace std;
 class ListaPlantel {
 private:
     NodoPlantel* ppio;
+    NodoPlantel* actual;
 public:
     ListaPlantel();
     virtual ~ListaPlantel();

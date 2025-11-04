@@ -2,6 +2,7 @@
  
 ListaVehiculo::ListaVehiculo() {
 	ppio = NULL;
+    actual = NULL;
 }
 ListaVehiculo::~ListaVehiculo() {
     while (ppio != NULL) {
@@ -22,9 +23,11 @@ void ListaVehiculo::insertarFinal(NodoVehiculo* n) {
     }
 }
 string ListaVehiculo::toString() {
+    stringstream s;
     NodoVehiculo* aux = ppio;
     while (aux != NULL) {
-        cout << aux->getDato()->toString() << endl;
+        s << aux->getDato()->toString() << endl;
         aux = aux->getSiguiente();
     }
+    return s.str();
 }

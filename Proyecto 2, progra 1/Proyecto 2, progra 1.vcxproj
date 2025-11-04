@@ -123,6 +123,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ArchivoBitacora.h" />
+    <ClInclude Include="ArchivoCliente.h" />
+    <ClInclude Include="ArchivoColaborador.h" />
+    <ClInclude Include="ArchivoSucursal.h" />
+    <ClInclude Include="ArchivoVehiculo.h" />
     <ClInclude Include="BitacoraEstado.h" />
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="Colaborador.h" />
@@ -131,7 +136,10 @@
     <ClInclude Include="ListaBitacora.h" />
     <ClInclude Include="ListaCliente.h" />
     <ClInclude Include="ListaColaborador.h" />
+    <ClInclude Include="ListaContrato.h" />
     <ClInclude Include="ListaPlantel.h" />
+    <ClInclude Include="ListaSolicitud.h" />
+    <ClInclude Include="ListaSucursal.h" />
     <ClInclude Include="ListaVehiculo.h" />
     <ClInclude Include="NodoBitacora.h" />
     <ClInclude Include="NodoCliente.h" />
@@ -149,6 +157,11 @@
     <ClInclude Include="Vehiculo.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ArchivoBitacora.cpp" />
+    <ClCompile Include="ArchivoCliente.cpp" />
+    <ClCompile Include="ArchivoColaborador.cpp" />
+    <ClCompile Include="ArchivoSucursal.cpp" />
+    <ClCompile Include="ArchivoVehiculo.cpp" />
     <ClCompile Include="BitacoraEstado.cpp" />
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Colaborador.cpp" />
@@ -157,7 +170,10 @@
     <ClCompile Include="ListaBitacora.cpp" />
     <ClCompile Include="ListaCliente.cpp" />
     <ClCompile Include="ListaColaborador.cpp" />
+    <ClCompile Include="ListaContrato.cpp" />
     <ClCompile Include="ListaPlantel.cpp" />
+    <ClCompile Include="ListaSolicitud.cpp" />
+    <ClCompile Include="ListaSucursal.cpp" />
     <ClCompile Include="ListaVehiculo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NodoBitacora.cpp" />

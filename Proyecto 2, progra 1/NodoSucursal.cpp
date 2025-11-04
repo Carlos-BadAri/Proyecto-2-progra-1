@@ -25,3 +25,8 @@ void NodoSucursal::setSiguiente(NodoSucursal* sig) {
 NodoSucursal* NodoSucursal::getSiguiente() {
     return siguiente;
 }
+
+Sucursal* NodoSucursal::getDato() {
+    return dato;
+}
+
