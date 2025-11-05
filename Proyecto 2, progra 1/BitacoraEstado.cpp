@@ -44,9 +44,9 @@ void BitacoraEstado::setDescripcion(string descripcion) {
 
 string BitacoraEstado::toString() {
     stringstream ss;
-    ss << "Fecha: " << fecha
-        << " | Entrada: " << horaEntrada
-        << " | Salida: " << horaSalida
-        << " | Descripción: " << descripcion;
+    ss << "Fecha: " << fecha << endl;
+    ss << "Entrada: " << horaEntrada << endl;
+    ss << "Salida: " << horaSalida << endl;
+    ss << "Descripción: " << descripcion << endl;
     return ss.str();
 }

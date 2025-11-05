@@ -9,7 +9,7 @@ ArchivoCliente::~ArchivoCliente() {
 void ArchivoCliente::guardar(ListaCliente* lista) {
     ofstream archivo("clientes.txt");
     if (!archivo.is_open()) return;
-    archivo << lista->toString(); 
+   archivo << lista->toString(); 
     archivo.close();
 }
 

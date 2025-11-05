@@ -16,7 +16,7 @@ private:
 
 public:
     Vehiculo();
-    Vehiculo(string placa, string marca, string modelo, string color, int anio);
+    Vehiculo(string, string, string, string, int);
     ~Vehiculo();
             
     string getPlaca();
@@ -26,12 +26,12 @@ public:
     int getAnio();
     BitacoraEstado* getBitacora();
 
-    void setPlaca(string placa);
-    void setMarca(string marca);
-    void setModelo(string modelo);
-    void setColor(string color);
-    void setAnio(int anio);
-    void setBitacora(BitacoraEstado* bitacora);
+    void setPlaca(string);
+    void setMarca(string);
+    void setModelo(string);
+    void setColor(string);
+    void setAnio(int);
+    void setBitacora(BitacoraEstado*);
 
     string toString();
 };

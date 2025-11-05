@@ -4,7 +4,6 @@
 #include <sstream>
 using namespace std;
 
-// Declaraciones adelantadas para evitar dependencias circulares
 class Cliente;
 class Vehiculo;
 

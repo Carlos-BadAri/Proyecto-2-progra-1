@@ -13,7 +13,7 @@ private:
     int filas;
     int columnas;
     int capacidadMax;
-    EspacioEstacionamiento** matriz; // Matriz dinámica de espacios
+    EspacioEstacionamiento** matriz;
 
 public:
     Plantel();

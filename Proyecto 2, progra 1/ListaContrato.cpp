@@ -13,7 +13,8 @@ ListaContrato::~ListaContrato() {
 }
 
 void ListaContrato::insertarInicio(NodoContrato* n) {
-    if (ppio != NULL) n->setSiguiente(ppio);
+    if (ppio != NULL)
+        n->setSiguiente(ppio);
     ppio = n;
 }
 
@@ -36,11 +37,12 @@ bool ListaContrato::insertarPosicion(NodoContrato* n, int pos) {
     }
 
     NodoContrato* aux = ppio;
-    for (int i = 1; i < pos - 1 && aux != NULL; i++) {
+    for (int i = 1; i < pos - 1 && aux != NULL; i++)
         aux = aux->getSiguiente();
-    }
 
-    if (aux == NULL) return false;
+    if (aux == NULL)
+        return false;
+
     n->setSiguiente(aux->getSiguiente());
     aux->setSiguiente(n);
     return true;
@@ -55,7 +57,9 @@ void ListaContrato::eliminarInicio() {
 }
 
 void ListaContrato::eliminarFinal() {
-    if (ppio == NULL) return;
+    if (ppio == NULL)
+        return;
+
     if (ppio->getSiguiente() == NULL) {
         delete ppio;
         ppio = NULL;
@@ -65,6 +69,7 @@ void ListaContrato::eliminarFinal() {
     NodoContrato* aux = ppio;
     while (aux->getSiguiente()->getSiguiente() != NULL)
         aux = aux->getSiguiente();
+
     delete aux->getSiguiente();
     aux->setSiguiente(NULL);
 }
@@ -76,11 +81,11 @@ bool ListaContrato::eliminarPosicion(int pos) {
     }
 
     NodoContrato* aux = ppio;
-    for (int i = 1; i < pos - 1 && aux != NULL; i++) {
+    for (int i = 1; i < pos - 1 && aux != NULL; i++)
         aux = aux->getSiguiente();
-    }
 
-    if (aux == NULL || aux->getSiguiente() == NULL) return false;
+    if (aux == NULL || aux->getSiguiente() == NULL)
+        return false;
 
     NodoContrato* temp = aux->getSiguiente();
     aux->setSiguiente(temp->getSiguiente());
@@ -96,4 +101,8 @@ string ListaContrato::toString() {
         aux = aux->getSiguiente();
     }
     return s.str();
+}
+
+NodoContrato* ListaContrato::getPpio() {
+    return ppio;
 }

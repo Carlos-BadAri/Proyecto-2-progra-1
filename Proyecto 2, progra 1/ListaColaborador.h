@@ -12,7 +12,7 @@ private:
 public:
     ListaColaborador();
     virtual ~ListaColaborador();
-    void agregar(Colaborador* c);
-    Colaborador* buscar(string id);
+    void agregar(Colaborador*);
+    Colaborador* buscar(string);
     string toString();
 };

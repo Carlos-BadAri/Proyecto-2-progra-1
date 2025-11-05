@@ -8,6 +8,7 @@ using namespace std;
 class Cliente;
 class Vehiculo;
 class Colaborador;
+class SolicitudAlquiler;
 
 class ContratoAlquiler {
 private:
@@ -17,7 +18,8 @@ private:
     double montoTotal;
     Cliente* cliente;
     Vehiculo* vehiculo;
-    Colaborador* colaborador; // quien gestionó el contrato
+    Colaborador* colaborador;
+    SolicitudAlquiler* solicitud;
 
 public:
     ContratoAlquiler();
@@ -25,7 +27,6 @@ public:
         Cliente* cliente, Vehiculo* vehiculo, Colaborador* colaborador);
     ~ContratoAlquiler();
 
-    // Getters
     string getIdContrato();
     string getFechaInicio();
     string getFechaFin();
@@ -33,15 +34,16 @@ public:
     Cliente* getCliente();
     Vehiculo* getVehiculo();
     Colaborador* getColaborador();
+    SolicitudAlquiler* getSolicitud();
 
-    // Setters
-    void setIdContrato(string idContrato);
-    void setFechaInicio(string fechaInicio);
-    void setFechaFin(string fechaFin);
-    void setMontoTotal(double montoTotal);
-    void setCliente(Cliente* cliente);
-    void setVehiculo(Vehiculo* vehiculo);
-    void setColaborador(Colaborador* colaborador);
+    void setIdContrato(string);
+    void setFechaInicio(string);
+    void setFechaFin(string);
+    void setMontoTotal(double);
+    void setCliente(Cliente*);
+    void setVehiculo(Vehiculo*);
+    void setColaborador(Colaborador*);
+    void setSolicitud(SolicitudAlquiler*);
 
     string toString();
 };

@@ -10,6 +10,6 @@ public:
     ArchivoCliente();
     virtual ~ArchivoCliente();
 
-    void guardar(ListaCliente* lista);
-    void cargar(ListaCliente* lista);
+    void guardar(ListaCliente*);
+    void cargar(ListaCliente*);
 };

@@ -15,16 +15,16 @@ private:
 
 public:
     EspacioEstacionamiento();
-    EspacioEstacionamiento(string codigo);
+    EspacioEstacionamiento(string);
     ~EspacioEstacionamiento();
 
     string getCodigo();
     string getEstado();
     Vehiculo* getVehiculo();
 
-    void setCodigo(string codigo);
-    void setEstado(string estado);
-    void setVehiculo(Vehiculo* vehiculo);
+    void setCodigo(string);
+    void setEstado(string);
+    void setVehiculo(Vehiculo*);
 
     string toString();
 };

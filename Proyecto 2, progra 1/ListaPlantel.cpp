@@ -33,3 +33,7 @@ string ListaPlantel::toString() {
     }
     return s.str();
 }
+
+NodoPlantel* ListaPlantel::getPpio() {
+    return ppio;
+}

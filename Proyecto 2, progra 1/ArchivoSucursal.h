@@ -11,9 +11,9 @@ private:
     string nombreArchivo;
 
 public:
-    ArchivoSucursal(string nombreArchivo);
+    ArchivoSucursal(string);
     virtual ~ArchivoSucursal();
 
-    void guardar(ListaSucursal* lista);
-    void cargar(ListaSucursal* lista);
+    void guardar(ListaSucursal*);
+    void cargar(ListaSucursal*);
 };

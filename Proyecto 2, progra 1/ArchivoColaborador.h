@@ -13,6 +13,6 @@ public:
     ArchivoColaborador(string nombreArchivo = "colaboradores.txt");
     virtual ~ArchivoColaborador();
 
-    void guardar(ListaColaborador* lista);
-    void cargar(ListaColaborador* lista);
+    void guardar(ListaColaborador*);
+    void cargar(ListaColaborador*);
 };

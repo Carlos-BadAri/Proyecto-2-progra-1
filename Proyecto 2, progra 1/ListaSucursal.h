@@ -11,12 +11,12 @@ private:
 public:
     ListaSucursal();
     virtual ~ListaSucursal();
-    void insertarInicio(NodoSucursal* n);
-    void insertarFinal(NodoSucursal* n);
-    bool insertarPosicion(NodoSucursal* n, int pos);
+    void insertarInicio(NodoSucursal*);
+    void insertarFinal(NodoSucursal*);
+    bool insertarPosicion(NodoSucursal*, int);
     void eliminarInicio();
     void eliminarFinal();
-    bool eliminarPosicion(int pos);
+    bool eliminarPosicion(int);
     string toString();
     NodoSucursal* getPpio();
 

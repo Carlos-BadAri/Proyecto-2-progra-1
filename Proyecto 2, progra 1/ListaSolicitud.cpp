@@ -97,3 +97,7 @@ string ListaSolicitud::toString() {
     }
     return s.str();
 }
+
+NodoSolicitud* ListaSolicitud::getPpio() {
+    return ppio;
+}

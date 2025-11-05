@@ -11,11 +11,13 @@ private:
 public:
     ListaSolicitud();
     virtual ~ListaSolicitud();
-    void insertarInicio(NodoSolicitud* n);
-    void insertarFinal(NodoSolicitud* n);
-    bool insertarPosicion(NodoSolicitud* n, int pos);
+    void insertarInicio(NodoSolicitud*);
+    void insertarFinal(NodoSolicitud*);
+    bool insertarPosicion(NodoSolicitud*, int);
     void eliminarInicio();
     void eliminarFinal();
-    bool eliminarPosicion(int pos);
+    bool eliminarPosicion(int);
     string toString();
+    NodoSolicitud* getPpio();
+
 };

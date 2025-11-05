@@ -126,6 +126,9 @@
     <ClInclude Include="ArchivoBitacora.h" />
     <ClInclude Include="ArchivoCliente.h" />
     <ClInclude Include="ArchivoColaborador.h" />
+    <ClInclude Include="ArchivoContrato.h" />
+    <ClInclude Include="ArchivoPlantel.h" />
+    <ClInclude Include="ArchivoSolicitud.h" />
     <ClInclude Include="ArchivoSucursal.h" />
     <ClInclude Include="ArchivoVehiculo.h" />
     <ClInclude Include="BitacoraEstado.h" />
@@ -141,6 +144,7 @@
     <ClInclude Include="ListaSolicitud.h" />
     <ClInclude Include="ListaSucursal.h" />
     <ClInclude Include="ListaVehiculo.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="NodoBitacora.h" />
     <ClInclude Include="NodoCliente.h" />
     <ClInclude Include="NodoColaborador.h" />
@@ -160,6 +164,9 @@
     <ClCompile Include="ArchivoBitacora.cpp" />
     <ClCompile Include="ArchivoCliente.cpp" />
     <ClCompile Include="ArchivoColaborador.cpp" />
+    <ClCompile Include="ArchivoContrato.cpp" />
+    <ClCompile Include="ArchivoPlantel.cpp" />
+    <ClCompile Include="ArchivoSolicitud.cpp" />
     <ClCompile Include="ArchivoSucursal.cpp" />
     <ClCompile Include="ArchivoVehiculo.cpp" />
     <ClCompile Include="BitacoraEstado.cpp" />
@@ -176,6 +183,7 @@
     <ClCompile Include="ListaSucursal.cpp" />
     <ClCompile Include="ListaVehiculo.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="NodoBitacora.cpp" />
     <ClCompile Include="NodoCliente.cpp" />
     <ClCompile Include="NodoColaborador.cpp" />

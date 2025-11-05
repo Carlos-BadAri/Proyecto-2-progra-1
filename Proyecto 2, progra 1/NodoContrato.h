@@ -10,10 +10,10 @@ private:
     NodoContrato* siguiente;
 public:
     NodoContrato();
-    NodoContrato(ContratoAlquiler* c);
+    NodoContrato(ContratoAlquiler*);
     virtual ~NodoContrato();
-    void agregarDato(ContratoAlquiler* c);
-    void setSiguiente(NodoContrato* sig);
+    void agregarDato(ContratoAlquiler*);
+    void setSiguiente(NodoContrato*);
     NodoContrato* getSiguiente();
     ContratoAlquiler* getDato();
 };

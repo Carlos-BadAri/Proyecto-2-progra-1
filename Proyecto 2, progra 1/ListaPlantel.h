@@ -13,6 +13,7 @@ public:
     ListaPlantel();
     virtual ~ListaPlantel();
 
-    void insertarFinal(NodoPlantel* n);
+    void insertarFinal(NodoPlantel*);
     string toString();
+    NodoPlantel* getPpio();
 };

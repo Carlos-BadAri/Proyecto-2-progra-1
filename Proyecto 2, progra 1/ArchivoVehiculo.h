@@ -10,6 +10,6 @@ public:
     ArchivoVehiculo();
     virtual ~ArchivoVehiculo();
 
-    void guardar(ListaVehiculo* lista);
-    void cargar(ListaVehiculo* lista);
+    void guardar(ListaVehiculo*);
+    void cargar(ListaVehiculo*);
 };
