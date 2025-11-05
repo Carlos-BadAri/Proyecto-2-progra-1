@@ -19,5 +19,8 @@ public:
     bool eliminarPosicion(int);
     string toString();
     NodoSucursal* getPpio();
+    Sucursal* buscar(string);
+    bool Eliminar(const string&);
+
 
 };

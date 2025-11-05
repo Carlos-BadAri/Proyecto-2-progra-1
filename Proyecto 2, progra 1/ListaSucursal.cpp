@@ -107,3 +107,37 @@ string ListaSucursal::toString() {
 NodoSucursal* ListaSucursal::getPpio() {
     return ppio;
 }
+
+Sucursal* ListaSucursal::buscar(string codigo) {
+    NodoSucursal* aux = ppio;
+    while (aux != nullptr) {
+        if (aux->getDato()->getCodigo() == codigo) {
+            return aux->getDato();
+        }
+        aux = aux->getSiguiente();
+    }
+    return nullptr;
+}
+
+bool ListaSucursal::Eliminar(const string& codigo){
+    if (ppio == NULL) return false;
+    NodoSucursal* ant = NULL;
+    NodoSucursal* act = ppio;
+
+    while (act != NULL && act->getDato()->getCodigo() != codigo) {
+        ant = act;
+        act = act->getSiguiente();
+    }
+    if (act == NULL)
+        return false;
+    if (ant == NULL) {
+        ppio = act->getSiguiente();
+    }
+    else {
+        ant->setSiguiente(act->getSiguiente());
+    }
+    delete act->getDato();
+    delete act;
+
+    return true;
+}
