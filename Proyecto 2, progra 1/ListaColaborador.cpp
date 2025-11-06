@@ -48,3 +48,27 @@ string ListaColaborador::toString() {
     }
     return s.str();
 }
+
+bool ListaColaborador::eliminar(string id) {
+    if (ppio == NULL) return false;
+
+    NodoColaborador* act = ppio;
+    NodoColaborador* ant = NULL;
+
+    while (act != NULL && act->getDato()->getId() != id) {
+        ant = act;
+        act = act->getSiguiente();
+    }
+    if (act == NULL) 
+        return false;
+    if (ant == NULL) {
+        ppio = act->getSiguiente();
+    }
+    else {
+        ant->setSiguiente(act->getSiguiente());
+    }
+    delete act->getDato();
+    delete act;
+
+    return true;
+}

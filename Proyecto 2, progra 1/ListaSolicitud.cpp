@@ -9,9 +9,11 @@ ListaSolicitud::~ListaSolicitud() {
     while (ppio != NULL) {
         NodoSolicitud* aux = ppio;
         ppio = ppio->getSiguiente();
+        delete aux->getDato();
         delete aux;
     }
 }
+
 
 void ListaSolicitud::insertarInicio(NodoSolicitud* n) {
     if (ppio != NULL) n->setSiguiente(ppio);
@@ -100,4 +102,15 @@ string ListaSolicitud::toString() {
 
 NodoSolicitud* ListaSolicitud::getPpio() {
     return ppio;
+}
+
+SolicitudAlquiler* ListaSolicitud::buscar(string idSolicitud) {
+    NodoSolicitud* aux = ppio;
+    while (aux != NULL) {
+        if (aux->getDato()->getIdSolicitud() == idSolicitud) {
+            return aux->getDato();
+        }
+        aux = aux->getSiguiente();
+    }
+    return NULL;
 }

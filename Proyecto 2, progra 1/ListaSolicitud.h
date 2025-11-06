@@ -19,5 +19,5 @@ public:
     bool eliminarPosicion(int);
     string toString();
     NodoSolicitud* getPpio();
-
+    SolicitudAlquiler* buscar(string);
 };

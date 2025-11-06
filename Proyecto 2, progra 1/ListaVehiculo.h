@@ -13,6 +13,9 @@ public:
     ListaVehiculo();
     virtual ~ListaVehiculo();
 
+    Vehiculo* buscar(string placa);
+    bool eliminar(string placa);
+
     void insertarFinal(NodoVehiculo*);
     string toString();
 };

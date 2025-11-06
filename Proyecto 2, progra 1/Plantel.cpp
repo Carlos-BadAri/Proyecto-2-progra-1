@@ -55,7 +55,6 @@ void Plantel::recomendarEspacios() {
     }
 }
 
-// Getters / Setters
 char Plantel::getLetra() {
     return letra;
 }

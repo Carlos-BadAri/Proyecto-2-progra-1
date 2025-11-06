@@ -15,4 +15,6 @@ public:
     void agregar(Colaborador*);
     Colaborador* buscar(string);
     string toString();
+    bool eliminar(string);
+
 };

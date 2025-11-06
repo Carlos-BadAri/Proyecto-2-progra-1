@@ -44,7 +44,7 @@ void Colaborador::setSucursalAsignada(string sucursalAsignada) {
 
 string Colaborador::toString() {
     stringstream ss;
-    ss << "[Colaborador] " << endl;
+    ss << "Colaborador" << endl;
     ss << "ID: " << idColaborador << endl;
     ss << "Nombre: " << nombre << endl;
     ss << "Puesto: " << puesto << endl;

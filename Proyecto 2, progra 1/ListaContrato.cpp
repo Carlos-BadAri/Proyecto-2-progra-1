@@ -8,9 +8,11 @@ ListaContrato::~ListaContrato() {
     while (ppio != NULL) {
         NodoContrato* aux = ppio;
         ppio = ppio->getSiguiente();
+        delete aux->getDato();
         delete aux;
     }
 }
+
 
 void ListaContrato::insertarInicio(NodoContrato* n) {
     if (ppio != NULL)
@@ -105,4 +107,13 @@ string ListaContrato::toString() {
 
 NodoContrato* ListaContrato::getPpio() {
     return ppio;
+}
+
+ContratoAlquiler* ListaContrato::buscar(string idContrato) {
+    NodoContrato* aux = ppio;
+    while (aux != NULL) {
+        if (aux->getDato()->getIdContrato() == idContrato) return aux->getDato();
+        aux = aux->getSiguiente();
+    }
+    return NULL;
 }

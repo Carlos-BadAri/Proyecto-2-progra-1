@@ -52,9 +52,9 @@ private:
     void menuReportesPlantelVehiculos();
     void menuReportesAlquileres();
 
-    static int leerIntRango(const string&, int, int);
-    static int leerInt(const string&);
-    static string leerLinea(const string&);
+    static int leerIntRango(string, int, int);
+    static int leerInt(string);
+    static string leerLinea(string);
     static void esperarEnter();
 
     void crearSucursal();
@@ -95,9 +95,9 @@ private:
     void verContratosPorSucursal();
     void reporteAlquileresPorColaborador();
 
-    Sucursal* seleccionarSucursalPorCodigo(const string&);
+    Sucursal* seleccionarSucursalPorCodigo(string);
     Plantel* seleccionarPlantelPorLetra();
     EspacioEstacionamiento* recomendarEspacio(Plantel*);
-    EspacioEstacionamiento* buscarEspacioPorCodigo(Plantel*, const string&);
+    EspacioEstacionamiento* buscarEspacioPorCodigo(Plantel*,string);
     void dibujarMatriz(Plantel*);
 };

@@ -15,4 +15,6 @@ public:
     void agregar(Cliente*);
     Cliente* buscar(string);
     string toString();
+    NodoCliente* getPpio();
+    bool eliminar(string);
 };

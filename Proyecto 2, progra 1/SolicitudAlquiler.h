@@ -11,7 +11,7 @@ class SolicitudAlquiler {
 private:
     string idSolicitud;
     string fechaSolicitud;
-    string estado; // "Pendiente", "Aprobada", "Rechazada"
+    string estado;
     Cliente* cliente;
     Vehiculo* vehiculo;
 

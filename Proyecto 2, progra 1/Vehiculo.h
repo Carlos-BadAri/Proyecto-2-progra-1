@@ -3,6 +3,7 @@
 #include <string>
 #include <sstream>
 #include "BitacoraEstado.h"
+#include <fstream>
 using namespace std;
 
 class Vehiculo {
@@ -13,10 +14,11 @@ private:
     string color;
     int anio;
     BitacoraEstado* bitacora;
+    string estado;
 
 public:
     Vehiculo();
-    Vehiculo(string, string, string, string, int);
+    Vehiculo(string, string, string, string, int,string);
     ~Vehiculo();
             
     string getPlaca();
@@ -25,6 +27,7 @@ public:
     string getColor();
     int getAnio();
     BitacoraEstado* getBitacora();
+    string getEstado();
 
     void setPlaca(string);
     void setMarca(string);
@@ -32,6 +35,8 @@ public:
     void setColor(string);
     void setAnio(int);
     void setBitacora(BitacoraEstado*);
+    void setEstado(string);
 
     string toString();
+    void registrarCambioEstado(string,string,string,string);
 };

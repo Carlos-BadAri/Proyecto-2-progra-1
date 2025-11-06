@@ -25,13 +25,13 @@ void ArchivoVehiculo::cargar(ListaVehiculo* lista) {
     string linea;
     while (getline(archivo, linea)) {
         stringstream ss(linea);
-        string placa, marca, modelo, color;
+        string placa, marca, modelo, color, estado;
         int anio;
 
-        ss >> placa >> marca >> modelo >> color >> anio;
+        ss >> placa >> marca >> modelo >> color >> anio >> estado;
 
         if (!ss.fail()) {//Esto lo que hace es que solo crea el objeto Vehiculo si todo se leyó correctamente
-            Vehiculo* v = new Vehiculo(placa, marca, modelo, color, anio);
+            Vehiculo* v = new Vehiculo(placa, marca, modelo, color, anio, estado);
             NodoVehiculo* nodo = new NodoVehiculo(v);
             lista->insertarFinal(nodo);
         }

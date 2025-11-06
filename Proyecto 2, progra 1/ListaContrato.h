@@ -18,4 +18,5 @@ public:
     bool eliminarPosicion(int);
     string toString();
     NodoContrato* getPpio();
+    ContratoAlquiler* buscar(string);
 };
